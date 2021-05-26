@@ -2,7 +2,7 @@ from user_interface import *
 from sweepstake import Sweepstake
 from contestant import Contestant
 
-
+"""Using dependency injection to make adding and removing sweepstakes"""
 class MarketingFirm:
     def __init__(self, manager):
         self.manager = manager
