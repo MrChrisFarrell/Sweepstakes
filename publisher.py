@@ -14,4 +14,4 @@ class Publisher:
             if subscriber.is_winner:
                 subscriber.update(f"Congratulations {subscriber.first_name} {subscriber.last_name}!!!\nYou've won the sweepstakes!!!")
             else:
-                subscriber.update(f"Sorry {self.first_name} {self.last_name},\nYou did not win the sweepstakes")
+                subscriber.update(f"Sorry {subscriber.first_name} {subscriber.last_name},\nYou did not win the sweepstakes")
