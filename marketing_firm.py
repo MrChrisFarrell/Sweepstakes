@@ -10,7 +10,7 @@ class MarketingFirm:
     def create_sweepstakes(self):
         sweepstakes_name = get_input("Name the sweepstakes - ")
         sweepstakes = Sweepstake(sweepstakes_name)
-        add_contestant = verify("Do you want to add a contestant? ")
+        add_contestant = True
         contestants_added = 0
         while add_contestant:
             contestant_info = assign_contestant_info(contestants_added)
