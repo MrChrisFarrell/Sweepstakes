@@ -22,7 +22,10 @@ def get_input(message):
 
 def verify(message):
     answer = input(message).lower()
-    if answer == 'yes':
+    if answer != 'yes' and answer != 'no':
+        display_message("Incorrect input")
+        return verify(message)
+    elif answer == 'yes':
         return True
     else:
         return False
